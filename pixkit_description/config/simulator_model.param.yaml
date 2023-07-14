@@ -2,7 +2,7 @@
   ros__parameters:
     simulated_frame_id: "base_link" # center of the rear axle.
     origin_frame_id: "map"
-    vehicle_model_type: "IDEAL_STEER_VEL_FOR_4WS" # options: IDEAL_STEER_VEL / IDEAL_STEER_ACC / IDEAL_STEER_ACC_GEARED / DELAY_STEER_ACC / DELAY_STEER_ACC_GEARED / IDEAL_STEER_VEL_FOR_4WS
+    vehicle_model_type: "IDEAL_STEER_ACC_GEARED_FOR_4WS" # options: IDEAL_STEER_VEL / IDEAL_STEER_ACC / IDEAL_STEER_ACC_GEARED / DELAY_STEER_ACC / DELAY_STEER_ACC_GEARED / IDEAL_STEER_VEL_FOR_4WS / IDEAL_STEER_ACC_GEARED_FOR_4WS
     initialize_source: "INITIAL_POSE_TOPIC" #  options: ORIGIN / INITIAL_POSE_TOPIC
     timer_sampling_time_ms: 25
     add_measurement_noise: False # the Gaussian noise is added to the simulated results
