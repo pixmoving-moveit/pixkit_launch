@@ -3,5 +3,9 @@
   <arg name="vehicle_id" default="$(env VEHICLE_ID default)"/>
   <include file="$(find-pkg-share pix_hooke_driver)/launch/pix_hooke_driver.launch.xml" />
   <include file="$(find-pkg-share pix_hooke_driver)/launch/pix_autoware_interface.launch.xml" />
-  <include file="$(find-pkg-share ros2_socketcan)/launch/socket_can_bridge.launch.xml" />
+  
+  <include file="$(find-pkg-share pixkit_launch)/launch/ros2_socketcan/socket_can0_bridge.launch.xml" />
+  <include file="$(find-pkg-share pixkit_launch)/launch/ros2_socketcan/socket_can1_bridge.launch.xml" />
+
+  <include file="$(find-pkg-share pixkit_launch)/launch/raw_vehicle_cmd_converter/raw_vehicle_converter.launch.xml" />
 </launch>
